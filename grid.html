@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .cont {
+            display: grid;
+            /* grid-template-columns: 100px 500px auto; */
+            grid-template-columns: 100px auto 200px;
+            /* grid-template-columns: 1fr 2fr 3fr 4fr; */
+            /* grid-template-columns: repeat(5, auto); */
+            /* grid-template-rows: 1fr 2fr 3fr 4fr; */
+            /* grid-auto-rows: 1fr; */
+            /* grid-gap: 0.5rem; */
+            /* grid-row-gap: 0.5rem; */
+            grid-column-gap: 1rem;
+            background-color: grey;
+            border: 2px solid black;
+        }
+        
+        .items {
+            text-align: center;
+            background-color: indianred;
+            border: 2px solid black;
+        }
+        
+        .item-5 {
+            display: grid;
+            /* grid-template-columns: 100px 500px auto; */
+            grid-template-columns: 200px auto 200px;
+        }
+        
+        .item-13 {
+            grid-column: 1 / span 3;
+            /* grid-column-start: 1;
+            grid-column-end: 4; */
+            background-color: royalblue;
+        }
+        
+        .subitem {
+            height: 300px;
+            margin: 5px;
+            border: 2px solid red;
+            background-color: chartreuse;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont">
+        <div class="items">item-1 </div>
+        <div class="items ">item-2 <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis voluptates repellendus nulla a ut? Doloribus rerum necessitatibus ducimus nobis odio adipisci, quo, unde a hic molestiae quia provident eligendi earum, maiores iusto
+            dolorum consectetur!
+        </div>
+        <div class="items">item-3</div>
+        <div class="items">item-4</div>
+        <div class="items item-5">
+            <div class="subitem">subitem-1</div>
+            <div class="subitem">subitem-2</div>
+            <div class="subitem">subitem-3</div>
+        </div>
+        <div class="items">item-6</div>
+        <div class="items">item-7</div>
+        <div class="items">item-8</div>
+        <div class="items">item-9</div>
+        <div class="items">item-10</div>
+        <div class="items">item-11</div>
+        <div class="items">item-12</div>
+        <div class="items item-13">item-13</div>
+        <div class="items">item-14</div>
+        <div class="items">item-15</div>
+        <div class="items">item-1</div>
+        <div class="items">item-2</div>
+        <div class="items">item-3</div>
+        <div class="items">item-4</div>
+        <div class="items">item-5</div>
+        <div class="items">item-6</div>
+        <div class="items">item-7</div>
+        <div class="items">item-8</div>
+        <div class="items">item-9</div>
+        <div class="items">item-10</div>
+        <div class="items">item-11</div>
+        <div class="items">item-12</div>
+        <div class="items">item-13</div>
+        <div class="items">item-14</div>
+        <div class="items">item-15</div>
+    </div>
+</body>
+
+</html>

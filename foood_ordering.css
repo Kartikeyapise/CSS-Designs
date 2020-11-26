@@ -1,0 +1,86 @@
+* {
+    margin: 0px;
+    padding: 0%;
+}
+
+body {}
+
+#navbar {
+    position: relative;
+    padding: 13px 50px;
+    display: flex;
+    align-items: center;
+    z-index: -10;
+}
+
+#navbar::before {
+    background: url("https://source.unsplash.com/user/erondu/1600x900") no-repeat center center/cover;
+    background-position: center;
+    background-size: cover;
+    content: "";
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+    opacity: 0.5;
+}
+
+#logo {
+    border-radius: 5px;
+    width: 50px;
+    height: 50px;
+    margin-right: 15px;
+}
+
+#navlist {
+    display: flex;
+}
+
+.items {
+    list-style: none;
+    display: inline;
+}
+
+#navlist a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 10px;
+}
+
+a:hover,
+a:active {
+    color: grey
+}
+
+.heading {
+    background-color: grey;
+    border: 2px solid green;
+}
+
+.mn {
+    border: 2px solid red;
+    display: flex;
+}
+
+.box {
+    position: relative;
+    border: 3px solid black;
+    border-radius: 10px;
+    padding: 2px 30px;
+    margin: 5px 25px;
+}
+
+.box::before {
+    content: "";
+    background: url("https://cdn.pixabay.com/photo/2020/03/14/16/09/cologne-4931055_1280.jpg") no-repeat center center/cover;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    z-index: -9;
+    opacity: 0.5;
+}

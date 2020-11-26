@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- <link rel="stylesheet" href="gym.css"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        * {
+            font-family: 'Baloo Bhai 2', cursive;
+        }
+
+        body {
+            background-image: url("https://cdn.pixabay.com/photo/2018/03/23/11/57/girl-3253532_1280.jpg");
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        header .box {
+            display: inline-block;
+            color: white;
+            /* border:2px solid red; */
+        }
+
+        #box1 {
+            position: absolute;
+            left: 90px;
+            top: 20px;
+
+        }
+
+        #box2 {
+            width: 40%;
+            display: block;
+            position: absolute;
+            margin: 0px 511px;
+            top: 20px;
+
+        }
+
+        #box3 {
+            position: absolute;
+            right: 0px;
+            top: 9px;
+        }
+
+        #box2 li {
+            display: inline;
+        }
+
+        #box2 li a {
+            list-style: none;
+            text-decoration: none;
+            color: white;
+            display: inline;
+            padding: 3px;
+            margin: 13px;
+        }
+
+        #box2 li a:hover,#box2 li a:active {
+            color: rgb(158, 158, 158);
+            text-decoration: underline;
+        }
+
+        img {
+            padding: 16px;
+            margin: auto;
+            margin-left: 4px;
+            width: 100px;
+            height: auto;
+        }
+
+        #box1 div {
+            text-align: center;
+            line-height: 0px;
+            font-size: 25px;
+        }
+
+        .btn {
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 16px;
+            border: 2px solid rgb(95, 95, 95);
+            background-color: black;
+            color: white;
+            margin: 5px;
+            padding: 3px;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: rgb(31, 30, 30);
+
+        }
+
+        .container {
+
+            padding: 50px 10px;
+            position: absolute;
+            top: 211px;
+            left: 90px;
+            /* border: 2px solid white; */
+            display: block;
+            border-radius: 15px;
+
+
+        }
+
+        .container:hover {
+            background-color: rgba(255, 255, 255, 0.5);
+
+        }
+
+        .container form input {
+            box-sizing: border-box;
+            display: block;
+            margin: 8px 73px;
+            padding: 8px 67px;
+            border-radius: 10px;
+            font-family: 'Baloo Bhai 2', cursive;
+            font-size: 16px;
+
+
+        }
+
+        .container h3 {
+            font-size: 30px;
+            font-weight: bolder;
+            color: white;
+            display: block;
+            text-align: center;
+        }
+
+        .container form button {
+            font-family: 'Baloo Bhai 2', cursive;
+            display: block;
+            margin: auto;
+            padding: 5px 141px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="box" id="box1">
+            <img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAOEAAADhCAMAAAAJbSJIAAAAdVBMVEUAAAD///95eXkfHx/z8/Po6Ojd3d36+vpISEiXl5f29vbu7u7Ozs5wcHDr6+vCwsIpKSkZGRmEhIRcXFyrq6tqamo4ODi4uLifn5/h4eFVVVVFRUVPT0+Ojo4NDQ27u7s+Pj6lpaWRkZHV1dULCwswMDBkZGQzuViuAAAEL0lEQVR4nO2d22KqMBBFxQuogBdEERQVtf7/Jx7rqW0lwAQzqGP3eqbZroJCQjJptQAAAAAAAAAAAAAAAAAAAAAAAAAAAGiQvh8MzuyDIPDn83mSrHeLTQM5m8VunSTnBP+ctP+MTP1+Azk5jplVTC9lzQl6JTnhlDVHYVUWfGbLmBOVx4zWjDkKi255smWN2XIqBC1ruGLLUTjaVcnnK4gpZ1kdEzd3oWbVyZbVZomZUzFc/0mFFZXMdJ1uyZymvortBxlWfgsv8FwrKjCEoS4whOH90IYeS84YhjC8m3cznO6Sk98+41+7t69nuLl8wLZ/Sj7qhiy2rnNtzum8rGHn50O6Ua1O1U33patveHi04U1/NdOPuL0h1TC0WQy9Ow31b8fpbXNyDHU7jh+55gQZanYcM8GGkVbASLDhSCsg35wkQ0un/Y6BYcxieDAwnGi0vzAw7LEYEmOWlYY6w/590YYzjfYT0Ya+Rvsz0YYBDM/4og33DRvq3XApYgPDgQjDineULIYBDGEIQxg2bjgwMHRZ3rDnO6gwhCEMYQjD9zLs6gwEUUxdGMIQhjCE4VsbDhcMhpPKqdYwhCEMYVh7alIB6sfmNDxu1MUONQyd+apvymo2NDBctjbHIrFTOPa8gx33XLfr5P+ohqHlcEDHlBs6XdftxfbB88bh/EewelJuHcMHUW54w/ccKWLug1zD6zw7alq1YMP/Z5FcZSTZ8HIk+cZVtGGvYPqMgmhDq09fpMINA/VVk4Jsw4H6kKYg2zD8A4YheQwMnwAMfxG2MvIY6Ybv/0uzJ4+RbZjpDPOKNkxba/IY2Yaz1oYcFRFt+LnwjrxdiDb8XEQzoU6iZEPnMoBL9S4kG34VPkqrjxJs+D0+vPaqxijFGnpJ64d+mkXbsefZdqy8n6wz5m1zQA8Jlxt2Y9s+eONtlKWlaxFN3lvwrEYwmV+61GgfhjCEIQxhaG6oPOGIMmx6vQUMYQhDGMKwxEOUoU414+ev5TYxlLFaHYYwhCEM5Rs+v7aJiaGM+jQwhCEMYSjfUJm6IMrwpNH+8yvSmRjqVKSDIQwfYXj9PXlfw+uKpvsMJfyWmhlORBvudALy08AkGertGzbN/Zkgw6FmPYDcMhpBhjrPbAUqcgx1hjC+WP0usDl8YcPf8yp79XbyOqVZGG0v08AOr2d4fb7uHGLb9rxtFGapzjM3xesY6tz17gGGMNQFhs/c//BRhk1tmgvDxxlyFIkp4nUMOYrEFPEyhg5HSbEi6KX7PHuUkFUeeEpsFkEWvOfZm5ssEcCznU0R1EnkuUjpk6jdDawPsRcx14bZRK0Ovv2/VTZV2/g4fPsuzquWzdgdugEDylcrupyPUhW71HNuUl/ILhoNC3C4dwNfFqUMa+5yCAAAAAAAAAAAAAAAAAAAAAAAAAAAQD3+Ac36dOqxUU5qAAAAAElFTkSuQmCC" alt="">
+            <div>AnK gym</div>
+        </div>
+        <div class="box" id="box2">
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Fitness Calculator</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </div>
+        <div class="box" id="box3">
+            <button class="btn">
+                Call Us Now
+            </button>
+            <button class="btn">
+                Email Us
+            </button>
+        </div>
+    </header>
+
+    <div class="container">
+        <h3> Join the best GYM now</h3>
+        <form action="action.php">
+            <input type="text" name="name" placeholder="Enter your name">
+            <input type="text" name="age" placeholder="Enter your age">
+            <input type="text" name="gender" placeholder="Enter your gender">
+            <input type="text" name="phone number" placeholder="Enter your phone number">
+            <button class="btn">submit</button>
+        </form>
+    </div>
+
+</body>
+
+</html>

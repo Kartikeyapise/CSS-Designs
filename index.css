@@ -1,0 +1,42 @@
+body{
+    font-family:'ubuntu', sans-serif;
+    background: #cb7ca0;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/4/42/Shaqi_jrvej.jpg');
+    
+}
+p{
+    color:black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    /* font-style: oblique; */
+    font-size: larger;
+    line-height: 10px;
+    opacity: 90%;
+    font-weight: bold;
+   
+
+}
+#division1{
+    opacity: 85%;
+    color: purple;
+    font-size: larger;
+    background:orange;
+    height: 200px;
+    width: 300px;
+    border-radius: 20px;
+    /* border-width: 10px;
+    border-color: royalblue;
+    border-style: solid; */
+    border: 10px royalblue solid;
+}
+#division2{
+    text-align: center;
+    text-emphasis: none;
+    background-image:url('https://st2.depositphotos.com/5142301/9621/v/950/depositphotos_96212636-stock-illustration-hand-with-dumbbell-logo.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 200px;
+    width: 300px;
+    border: 5px rgb(235, 61, 168) solid ;
+
+}
